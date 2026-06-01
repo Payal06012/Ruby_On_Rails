@@ -1,11 +1,11 @@
  # puts "hello ruby"
  
- # craeting multiple line of string =============
+ # Craeting multiple line of string =============
  
-#  print <<EOF 
-#  THIS THE WAY OF CRAETING
-#   MULTIPLE LOINE STRING.
-# EOF
+ print <<EOF 
+ THIS THE WAY OF CRAETING
+  MULTIPLE LOINE STRING.
+EOF
  
  
 # print <<EOF

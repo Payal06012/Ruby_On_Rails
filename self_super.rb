@@ -61,27 +61,36 @@
 #=======  
 
 class Name 
-
-    @action = "write"
+    #  puts Name.class
+    # # @action = "write"        @it is class instance var  but it is not access by the object because it is not instance var of the object
+    # puts @action
+    # puts self.object_id
+    # puts self.class
 
     #to access the instance variabel suing self we ahve to use getter function  
    attr_accessor :name ,:action   # or def name  end 
 
     def initialize()
        @name = "same"
-       puts @name
+    #    puts @name
     #    puts self.name
     end
 
      def getName(name)
         # puts self.name        
-        self.name  = name
-        puts "instance : #{@name}"
+        # self.name  = name
+        # puts "instance : #{@name}"
     end
 
     def action 
-        self.action = "paly"
-        puts "action #{@action}"
+          p @act       # it odes not throw error it only return nil because @act is not assigned any value
+        puts self.instance_variables     # only show action becsause only action var is calle by the obejct 
+        self.action = "paly"             # call action attr method thst contain @action var and assign value to it
+        puts self.instance_variables
+        # puts "current action : #{@action}"
+        # puts self.object_id
+        # puts self.class
+        # puts "action #{@action}"
     end
 
 end
