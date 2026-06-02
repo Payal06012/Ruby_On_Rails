@@ -1,9 +1,7 @@
 
 class Access 
 
-    attr_accessor :name
-     puts "instance methods"
-    puts self.instance_methods
+    attr_accessor :name 
 
     def public_method
       print "instance vatiable ===="

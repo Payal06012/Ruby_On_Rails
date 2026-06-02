@@ -12,11 +12,8 @@ s1.instanceMethod
 # School::ruby
 School::Student::classMethod
 
-class Teacher 
-    include School
-end
 
-t1 = Teacher.new
-puts School::Student
+
+
 
 
